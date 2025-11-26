@@ -1,0 +1,25 @@
+/* 100 Days Code; Day 75 (Program: Find Minimum Element in Array) */
+#include<stdio.h>
+int main()
+{
+    printf("Himansh Jeengar\nSAP ID: 590025460\nCourse- BSc CS\nBatch-1");
+    printf("\n-----------------\n");
+
+    int n, arr[50], i, min;
+
+    printf("Enter size: ");
+    scanf("%d", &n);
+
+    printf("Enter elements: ");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    min = arr[0];
+    for(i = 1; i < n; i++)
+        if(arr[i] < min)
+            min = arr[i];
+
+    printf("Minimum = %d", min);
+
+    return 0;
+}
