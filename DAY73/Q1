@@ -1,0 +1,22 @@
+/* 100 Days Code; Day 73 (Program: Count Digits of a Number) */
+#include<stdio.h>
+int main()
+{
+    printf("Himansh Jeengar\nSAP ID: 590025460\nCourse- BSc CS\nBatch-1");
+    printf("\n-----------------\n");
+
+    int num, count = 0;
+
+    printf("Enter number: ");
+    scanf("%d", &num);
+
+    while(num != 0)
+    {
+        count++;
+        num /= 10;
+    }
+
+    printf("Total digits = %d", count);
+
+    return 0;
+}
