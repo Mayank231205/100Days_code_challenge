@@ -1,0 +1,22 @@
+/* 100 Days Code; Day 72 (Program: Print Fibonacci Series n terms) */
+#include<stdio.h>
+int main()
+{
+    printf("Mayank Singh\nSAP ID: 590025460\nCourse- BSc CS\nBatch-1");
+    printf("\n-----------------\n");
+
+    int n, a = 0, b = 1, c, i;
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+    for(i = 1; i <= n; i++)
+    {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    return 0;
